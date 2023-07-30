@@ -39,11 +39,11 @@ def get_response(intent_tag, intents_json):
             break
     return result
 
-""" def get_response(tag):
+def get_response(tag):
     for intent in intents['intents']:
         if intent['tag'] == tag:
             return random.choice(intent['responses'])
-    return "Lo siento, no entiendo. ¿Podrías ser más específico?" """
+    return "Lo siento, no entiendo. ¿Podrías ser más específico?"
 
 # Cargar el modelo y otros datos necesarios
 words = pickle.load(open('words.pkl', 'rb'))

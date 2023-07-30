@@ -8,7 +8,7 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 import tensorflow as tf
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 
 lemmatizer = WordNetLemmatizer()
 
